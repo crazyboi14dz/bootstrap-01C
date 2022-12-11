@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BSForm</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        .background-radial-gradient {
+            height: 100vh;
+            background-color: hsl(218, 41%, 15%);
+            background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%),
+            radial-gradient(1250px circle at 100% 100%,
+                    hsl(218, 41%, 45%) 15%,
+                    hsl(218, 41%, 30%) 35%,
+                    hsl(218, 41%, 20%) 75%,
+                    hsl(218, 41%, 19%) 80%,
+                    transparent 100%);
+        }
+
+        #radius-shape-1 {
+            height: 17em;
+            width: 17em;
+            top: 0px;
+            left: 52rem;
+            background: radial-gradient(red, green, blue);
+            overflow: hidden;
+        }
+
+        #radius-shape-2 {
+            border-radius: 170px;
+            height: 17em;
+            width: 17em;
+            top: 21rem;
+            left: 68rem;
+            /*z-index: -1;*/
+            background: radial-gradient(red, green, blue);
+            overflow: hidden;
+        }
+
+
+        .width-100 {
+            width: 100%;
+        }
+
+        .sign-up {
+            width: 7%;
+            border: transparent;
+            background: #e8eeef;
+        }
+
+        .bg-glass {
+            background-color: hsla(0, 0%, 100%, 0.9) !important;
+            backdrop-filter: saturate(200%) blur(25px);
+        }
+    </style>
+</head>
+<body>
+
+<section class="background-radial-gradient overflow-hidden">
+
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-lg-5">
+
+        <div class="row gx-lg-5 align-items-center">
+
+            <div class="col-lg-6 mb-lg-0" style="z-index: 3">
+
+
+                <h1 class=" display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                    The best offer <br>
+                    <span style="color: hsl(218, 81%, 75%)">for your business</span>
+                </h1>
+
+                <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim optio quia rem repellat!
+                    Deserunt eveniet excepturi neque possimus voluptas! Dignissimos distinctio enim possimus quam
+                    quis rem sed, sit tenetur.
+                </p>
+            </div>
+
+            <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                <div class="position-absolute rounded-circle shadow-5-strong" id="radius-shape-1"></div>
+                <div class="position-absolute shadow-5-strong" id="radius-shape-2"></div>
+                <div class="bg-glass form rounded-3">
+
+                    <form class="px-4 py-5 px-md-5 text-center">
+                        <!--    First-Name && Last-Name-->
+                        <div class="row g-3 mb-4">
+                            <div class="col">
+                                <input aria-label="First name" autocomplete="off" class="form-control"
+                                       placeholder="First name"
+                                       type="text"/>
+                            </div>
+                            <div class="col">
+                                <input aria-label="Last name" autocomplete="off" class="form-control"
+                                       placeholder="Last name"
+                                       type="text"/>
+                            </div>
+                        </div>
+
+                        <!--    Email-Address-->
+                        <div class="col mb-4">
+                            <input autocomplete="off" class="form-control" id="inputEmail4" placeholder="Email address"
+                                   type="email">
+                        </div>
+
+                        <!--    Password-->
+                        <div class="col mb-4">
+                            <input autocomplete="off" class="form-control" id="inputPassword4" placeholder="Password"
+                                   type="password">
+                        </div>
+
+                        <!--    CheckBox-->
+                        <div class="form-check mb-4 text-center">
+                            <label class="form-check-label text-secondary" for="gridCheck">
+                                <input autocomplete="off" class="form-check-input" id="gridCheck" type="checkbox">
+                                Subscribe to our newsletter
+                            </label>
+                        </div>
+
+                        <!--    Sign in-->
+                        <button class="btn btn-primary btn-block mb-4 width-100" type="submit">Sign in</button>
+                        <div class="text-center">
+                            <p>or sign up with:</p>
+                            <button class="sign-up" type="button">
+                                <img alt="" src="eva-icons/fill/svg/facebook.svg">
+                            </button>
+                            <button class="sign-up" type="button">
+                                <img alt="" src="eva-icons/fill/svg/google.svg">
+                            </button>
+                            <button class="sign-up" type="button">
+                                <img alt="" src="eva-icons/fill/svg/twitter.svg">
+                            </button>
+                            <button class="sign-up" type="button">
+                                <img alt="" src="eva-icons/fill/svg/github.svg">
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+</body>
+</html>

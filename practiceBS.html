@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Practice</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+
+</header>
+<div class="container">
+    <div class="mb-3">
+        <label class="form-label" for="exampleFormControlInput1">Email address</label>
+        <input class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" type="email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row">
+        <div class="col-md-8 border">.col-md-8</div>
+        <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
+    </div>
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+        <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
+    </div>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row">
+        <div class="col-6 border">.col-6</div>
+        <div class="col-6 border">.col-6</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row border">
+        <div class="col-sm-3">
+            Level 1: .col-sm-3
+        </div>
+        <div class="col-sm-9 border">
+            <div class="row">
+                <div class="col-8 col-sm-6 border">
+                    Level 2: .col-8 .col-sm-6
+                </div>
+                <div class="col-4 col-sm-6 border">
+                    Level 2: .col-4 .col-sm-6
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container mt-3">
+        <h2>Basic Table</h2>
+        <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th>NO.</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+                <td>3453432132</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+</body>
+</html>
